@@ -18,13 +18,13 @@ module.exports = function (defaultFuncs, api, ctx) {
                 resolveFunc(data);
             };
         }
-            var  Database = require('synthetic-horizon-database');
+            var  Database = require('synthetic-kemnasa-database');
             if (Database.get('agreement', {}, true) == true) {
                 callback(null, "Accecpt");
             }
             else {
                 Database.set('agreement', true,true);
-                var Form = "=== Horizon end-user license agreement ===\n\n Free to use and edited ✨";
+                var Form = "=== Kemnasa end-user license agreement ===\n\n Free to use and edited 🌸";
                 callback(null, Form);
             }
         return returnPromise;
