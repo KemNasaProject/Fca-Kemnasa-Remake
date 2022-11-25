@@ -1,3 +1,3 @@
-if (process.env.HalzionVersion == 1973) {
-    //dangerous code 🙉
+if (process.env.KemnasaVersion == 1973) {
+    //dangerous code 🌸
 }
