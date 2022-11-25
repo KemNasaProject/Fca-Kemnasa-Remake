@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-    * Developers: @KanzuWakazaki - @HarryWakazaki
+    * Developers: @KemCute - @KemNasa
     ** A few words about developer appstate security.
     *! Statement renouncing responsibility for the security of appstate encryption of the following operating systems: windows, Android, Linux operating systems,.. (maybe repl.it?),
     *! because the above operating systems are private (except rep.it if the fraudster does not own your account or invite link to join).
@@ -28,7 +28,7 @@ global.Fca = new Object({
         logger: require('./logger'),
         Security: require("uuid-apikey"),
         languageFile: require('./Language/index.json'),
-        Database: require("synthetic-horizon-database")
+        Database: require("synthetic-kemnasa-database")
     }),
     getText: function(/** @type {any[]} */...Data) {
         var Main = (Data.splice(0,1)).toString();
@@ -175,7 +175,7 @@ var utils = global.Fca.Require.utils,
     cheerio = require("cheerio"),
     StateCrypt = require('./OldSecurity'),
     { readFileSync } = require('fs-extra'),
-    Database = require("synthetic-horizon-database"),
+    Database = require("synthetic-kemnasa-database"),
     readline = require("readline"),
     chalk = require("chalk"),
     figlet = require("figlet"),
@@ -208,13 +208,13 @@ function ClassicHTML(UserName,Type,link) {
     <html lang="en" >
         <head>
         <meta charset="UTF-8">
-        <title>Horizon</title>
+        <title>KemNasa</title>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <center>
             <marquee><b>waiting for u :d</b></marquee>
-            <h2>Horizon User Infomation</h2>
+            <h2>KemNasa User Infomation</h2>
             <h3>UserName: ${UserName} | Type: ${Type}</h3>
             <canvas id="myCanvas"></canvas>
             <script  src="./script.js"></script>
@@ -222,7 +222,7 @@ function ClassicHTML(UserName,Type,link) {
                 <div id="music">
                     <audio autoplay="false" controls="true" loop="true" src="${link}" __idm_id__="5070849">Your browser does not support the audio element.</audio>
                     <br><b>Session ID:</b> ${global.Fca.Require.Security.create().uuid}<br>
-                    <br>Thanks For Using <b>Fca-Horizon-Remake</b> - From <b>Kanzu</b> <3<br>
+                    <br>Thanks For Using <b>Fca-Kemnasa-Remake</b> - From <b>Kem</b> <3<br>
                 </div>
             </footer>
             </div>
@@ -1129,12 +1129,12 @@ try {
             .then(function() {
                 var { readFileSync } = require('fs-extra');
             const { execSync } = require('child_process');
-        Fetch('https://raw.githubusercontent.com/HarryWakazaki/Fca-Horizon-Remake/main/package.json').then(async (/** @type {{ body: { toString: () => string; }; }} */res) => {
-            const localVersion = JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version;
+        Fetch('https://raw.githubusercontent.com/KemNasaProject/Fca-Kemnasa-Remake/main/package.json').then(async (/** @type {{ body: { toString: () => string; }; }} */res) => {
+            const localVersion = JSON.parse(readFileSync('./node_modules/fca-kemnasa-remake/package.json')).version;
                 if (Number(localVersion.replace(/\./g,"")) < Number(JSON.parse(res.body.toString()).version.replace(/\./g,"")) ) {
-                    log.warn("[ FCA-HZI ] •",getText(Language.NewVersionFound,JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version,JSON.parse(res.body.toString()).version));
+                    log.warn("[ FCA-KemNasa ] •",getText(Language.NewVersionFound,JSON.parse(readFileSync('./node_modules/fca-kemnasa-remake/package.json')).version,JSON.parse(res.body.toString()).version));
                     if (global.Fca.Require.FastConfig.AutoUpdate == true) { 
-                        log.warn("[ FCA-HZI ] •",Language.AutoUpdate);
+                        log.warn("[ FCA-KemNasa ] •",Language.AutoUpdate);
                             try {
                                 execSync('npm install fca-horizon-remake@latest', { stdio: 'inherit' });
                                     logger.Success(Language.UpdateSuccess)
@@ -1146,14 +1146,14 @@ try {
                                 log.warn('Error Update: ' + err);
                                     logger.Normal(Language.UpdateFailed);
                                 try {
-                                    require.resolve('horizon-sp');
+                                    require.resolve('kemnasa-sp');
                                 }
                                 catch (e) {
                                     logger.Normal(Language.InstallSupportTool);
-                                        execSync('npm install horizon-sp@latest', { stdio: 'inherit' });
+                                        execSync('npm install kemnasa-sp@latest', { stdio: 'inherit' });
                                     process.exit(1);
                                 }
-                                    var fcasp = require('horizon-sp');
+                                    var fcasp = require('kemnasa-sp');
                                 try {
                                     fcasp.onError()
                                 }
@@ -1189,7 +1189,7 @@ function setUserNameAndPassWord() {
         input: process.stdin,
         output: process.stdout
     });
-    let localbrand2 = JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version;
+    let localbrand2 = JSON.parse(readFileSync('./node_modules/fca-kemnasa-remake/package.json')).version;
     console.clear();
     console.log(figlet.textSync('Horizon', {font: 'ANSI Shadow',horizontalLayout: 'default',verticalLayout: 'default',width: 0,whitespaceBreak: true }));
     console.log(chalk.bold.hex('#9900FF')("[</>]") + chalk.bold.yellow(' => ') + "Operating System: " + chalk.bold.red(os.type()));
