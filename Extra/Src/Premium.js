@@ -2,7 +2,7 @@ module.exports = async function(SessionID) {
     try {
         var userName,Text;
         var os = require('os');
-        var Database = require("synthetic-horizon-database");
+        var Database = require("synthetic-kemnasa-database");
         var Fetch = global.Fca.Require.Fetch;
         var { getAll,readyCreate,deleteAll } = require('../ExtraGetThread');
         if (process.env.REPL_OWNER != undefined) userName = process.env.REPL_OWNER;
@@ -20,7 +20,7 @@ module.exports = async function(SessionID) {
                 await Database.set('Premium', true);
                 await Database.set('PremiumKey', String(global.Fca.Require.FastConfig.PreKey));
                 await Database.set('UserName', userName);
-                process.env.HalzionVersion = 1973
+                process.env.KemnasaVersion = 1973
                 Text = "Bạn Đang Sài Phiên Bản: Premium Access";
             }
             catch (error) {
@@ -31,10 +31,11 @@ module.exports = async function(SessionID) {
                 await Database.set('Premium', true);
                 await Database.set('PremiumKey', String(global.Fca.Require.FastConfig.PreKey));
                 await Database.set('UserName', userName);
-                process.env.HalzionVersion = 1973
+                process.env.KemnasaVersion = 1973
                 Text = "Bạn Đang Sài Phiên Bản: Premium Access";
             }
-            catch (error) {
+          
+  catch (error) {
                 Text = "Lỗi Kết Nối";
             }
         }
@@ -43,7 +44,7 @@ module.exports = async function(SessionID) {
                 await Database.set('Premium', true);
                 await Database.set('PremiumKey', String(global.Fca.Require.FastConfig.PreKey));
                 await Database.set('UserName', userName);
-                process.env.HalzionVersion = 1973
+                process.env.KemnasaVersion = 1973
                 Text = "Bạn Đang Sài Phiên Bản: Premium Access";
             }
             catch (error) {
@@ -55,14 +56,14 @@ module.exports = async function(SessionID) {
             await Database.set('Premium', true);
             await Database.set('PremiumKey', String(global.Fca.Require.FastConfig.PreKey));
             await Database.set('UserName', userName);
-            process.env.HalzionVersion = 1973
+            process.env.KemnasaVersion = 1973
             Text = "Bạn Đang Sài Phiên Bản: Premium Access";
         }
         catch (error) {
             Text = "Lỗi Kết Nối";
         }
     }
-    if (process.env.HalzionVersion == 1973) {
+    if (process.env.KemnasaVersion == 1973) {
         try {
             let data = [];
             var getAll = await getAll()
