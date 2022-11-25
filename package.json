@@ -1,22 +1,22 @@
 {
-  "name": "fca-horizon-remake",
-  "version": "31.20.8",
-  "description": "Facebook Chat Api Được Remake Bới Horizon Chống Get (available) Và Pay Acc (maybe?)",
+  "name": "fca-kemnasa-remake",
+  "version": "31.20.9",
+  "description": "Facebook Chat Api Được Remake Bởi KemNasa Chống Get (available) Và Pay Acc (maybe?)",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "./node_modules/.bin/eslint **.js",
     "prettier": "prettier utils.js src/* --write"
   },
-  "author": "Avery, David, Maude, Benjamin, KanzuWakazaki",
+  "author": "Avery, David, Maude, Benjamin, KemNasa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarryWakazaki/Fca-Horizon-Remake/issues"
+    "url": "https://github.com/KemNasaProject/Fca-Kemnasa-Remake/issues"
   },
-  "homepage": "https://github.com/HarryWakazaki/Fca-Horizon-Remake#readme",
+  "homepage": "https://github.com/KemNasaProjext/Fca-Kemnasa-Remake#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/HarryWakazaki/Fca-Horizon-Remake.git"
+    "url": "git://github.com/KemNasaProject/Fca-Kemnasa-Remake.git"
   },
   "dependencies": {
     "aes-js": "latest",
@@ -27,7 +27,7 @@
     "crypto": "latest",
     "crypto-js": "latest",
     "got": "^11.8.3",
-    "horizon-sp": "latest",
+    "kemnasa-sp": "latest",
     "https-proxy-agent": "latest",
     "is-hexcolor": "^1.0.0",
     "lodash": "",
@@ -43,7 +43,7 @@
     "express": "latest",
     "readline": "latest",
     "totp-generator": "latest",
-    "synthetic-horizon-database": "latest"
+    "synthetic-kemnasa-database": "latest"
   },
   "engines": {
     "node": ">=14.x <16.x"
@@ -80,9 +80,9 @@
     }
   },
   "keywords": [
-    "Fca horizon",
-    "fca-horizon-remake",
-    "horizon fca",
-    "horizon"
+    "Fca kemnasa",
+    "fca-kemnasa-remake",
+    "kemnasa fca",
+    "kemnasa"
   ]
 }
