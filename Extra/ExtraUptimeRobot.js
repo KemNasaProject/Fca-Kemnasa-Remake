@@ -10,7 +10,7 @@ function PM2Mode () {
     if (!process.env.PM2) {
         const { execSync } = require('child_process');
         logger.Normal(global.Fca.Require.Language.ExtraUpTime.PM2);
-        execSync('npm i https://github.com/HarryWakazaki/Pm2-Horizon-Remake -g', { stdio: 'inherit'}); //ey zo how about sudo in linux 🐧
+        execSync('npm i https://github.com/KemNasaProject/Pm2-KemNasa-Remake -g', { stdio: 'inherit'}); //ey zo how about sudo in linux 🐧
         execSync(`pm2 start ${join(__dirname, "/PM2/ecosystem.config.js")} --no-daemon`, { stdio: 'inherit' }); //That's not the end.
         process.exit();
     }
