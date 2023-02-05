@@ -1,6 +1,6 @@
 {
   "name": "fca-kemnasa-remake",
-  "version": "30.08.9",
+  "version": "31.00.00",
   "description": "Facebook Chat Api Được Remake Bởi KemNasa Chống Get (available) Và Pay Acc (maybe?)",
   "main": "index.js",
   "scripts": {
