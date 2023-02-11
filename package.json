@@ -1,22 +1,22 @@
 {
-  "name": "fca-kemnasa-remake",
-  "version": "31.00.00",
-  "description": "Facebook Chat Api Được Remake Bởi KemNasa Chống Get (available) Và Pay Acc (maybe?)",
+  "name": "fca-kemdeveloper",
+  "version": "1.0.0",
+  "description": "Facebook Chat Api Được Remake Bởi KemDeveloper Hỗ Trợ Chạy BotChat Messendger!!!",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "./node_modules/.bin/eslint **.js",
     "prettier": "prettier utils.js src/* --write"
   },
-  "author": "Avery, David, Maude, Benjamin, KemNasa",
+  "author": "KemDeveloper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KemNasaProject/Fca-Kemnasa-Remake/issues"
+    "url": "https://github.com/"
   },
-  "homepage": "https://github.com/KemNasaProject/Fca-Kemnasa-Remake#readme",
-  "repository": {
+  "homepage": "https://github.com/",
+  "repository": 
     "type": "git",
-    "url": "git://github.com/KemNasaProject/Fca-Kemnasa-Remake.git"
+    "url": "git://github.com/"
   },
   "dependencies": {
     "aes-js": "latest",
@@ -27,7 +27,7 @@
     "crypto": "latest",
     "crypto-js": "latest",
     "got": "^11.8.3",
-    "kemnasa-sp": "latest",
+    "kemdeveloper-sp": "latest",
     "https-proxy-agent": "latest",
     "is-hexcolor": "^1.0.0",
     "lodash": "",
@@ -43,7 +43,7 @@
     "express": "latest",
     "readline": "latest",
     "totp-generator": "latest",
-    "synthetic-kemnasa-database": "latest"
+    "synthetic-kemdev-database": "latest"
   },
   "engines": {
     "node": ">=14.x <16.x"
@@ -80,9 +80,9 @@
     }
   },
   "keywords": [
-    "Fca kemnasa",
-    "fca-kemnasa-remake",
-    "kemnasa fca",
-    "kemnasa"
+    "Fca kemdeveloper",
+    "fca-kemdeveloper",
+    "kemdeveloper fca",
+    "kemdeveloper"
   ]
 }
